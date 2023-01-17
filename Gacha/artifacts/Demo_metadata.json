@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Gacha/Test.sol": "Demo"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Gacha/SafeMath.sol": {
+			"keccak256": "0x14bc8b6b85eb1ae822bdc7d3a91841a47a0e0f70738c6fa922b61926ad9598fc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f0fbeb7eff08ed83059dcbf2e459eef56d182f30f9cb6d0599962f3d2eb2c799",
+				"dweb:/ipfs/QmV5QomqCrLsjCKcaAo9AZoyE1uy4PPHGywJ86FtWHwSLL"
+			]
+		},
+		"Gacha/Test.sol": {
+			"keccak256": "0xcb8ccff92b43757ac0d341975d84ce031ff28c62090a410ffb9ec33098e73d8e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://faf4282c44101b700ea12a05a43193e115832bfba49659b4ff4a14493aaec223",
+				"dweb:/ipfs/QmdyJPov1wiBBdL74SFAi7yucDrm8CwP4ioGMoaqJ8i8NJ"
+			]
+		}
+	},
+	"version": 1
+}

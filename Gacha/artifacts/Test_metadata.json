@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Gacha/test.sol": "Test"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Gacha/test.sol": {
+			"keccak256": "0xa102895a3524869b1f81a26a51778e22438c7fe90bfb85a492bcff45b26f9caa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4e36e7404797e0d6d6348de4c070d3ab5e582a57d1b8fc72d156de64af4a0df3",
+				"dweb:/ipfs/Qmbng1jUg5qfTYdoJnMKyjCsijUfN2Bx7fMRrThcDqKeRf"
+			]
+		}
+	},
+	"version": 1
+}

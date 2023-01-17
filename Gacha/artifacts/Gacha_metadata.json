@@ -1,0 +1,479 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_addressToken",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_totalRate",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_unlockRate",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum Gacha.TypeToken",
+						"name": "_typeToken",
+						"type": "uint8"
+					}
+				],
+				"name": "AddNewReward",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_addressToken",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_caller",
+						"type": "address"
+					}
+				],
+				"name": "DeleteReward",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_caller",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "_listIndexReward",
+						"type": "uint256[]"
+					}
+				],
+				"name": "SendDailyResultGacha",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addressToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_totalRate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_unlockRate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rawardValue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Gacha.TypeToken",
+						"name": "_typeToken",
+						"type": "uint8"
+					}
+				],
+				"name": "addNewReward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ramdomWithLimitValue",
+						"type": "uint256"
+					}
+				],
+				"name": "checkRamdomNumber",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addressToken",
+						"type": "address"
+					}
+				],
+				"name": "deleteReward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addressToken",
+						"type": "address"
+					}
+				],
+				"name": "findIndexOfTokenReward",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "indexOfTokenReward",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAdmins",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTotalNumberReward",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addressToken",
+						"type": "address"
+					}
+				],
+				"name": "isRewardTokenExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC1155Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "rewardTokens",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "addressToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalRate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "unlockRate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rawardValue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Gacha.TypeToken",
+						"name": "typeToken",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_listIndexReward",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "address",
+						"name": "_challengerAddress",
+						"type": "address"
+					}
+				],
+				"name": "sendDailyResultGacha",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_adminAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_flag",
+						"type": "bool"
+					}
+				],
+				"name": "updateAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userInfo",
+				"outputs": [
+					{
+						"internalType": "enum Gacha.BetStatus",
+						"name": "betStatus",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"onERC1155Received(address,address,uint256,uint256,bytes)": {
+					"details": "onERC1155Received."
+				},
+				"onERC721Received(address,address,uint256,bytes)": {
+					"details": "onERC721Received."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Gacha/Gacha.sol": "Gacha"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Gacha/Counters.sol": {
+			"keccak256": "0x632d89cfbd5134bb48ab9f27f8acb3ef6230858240a06c01860523508cce9502",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://40a5aa5f1e2c16072e5b0976a2441d03b2a64e54b89eaed53b68f93d5838b4f0",
+				"dweb:/ipfs/Qmax5x4ubHZdFoRRFKdiCKX9FY78UiKMSAQmP81Mszecop"
+			]
+		},
+		"Gacha/EnumerableSet.sol": {
+			"keccak256": "0x1644df1d3839dedcc404a165434d83c6039b11bc3c3650a581d53ae35cf7e855",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://79b1ac5ac3fdd6b15e66ea1895280de8cdbb6756fe0b3fdc387181da6fce471c",
+				"dweb:/ipfs/QmNwb7sFXHzQfamophjHW51rB7KG2WZL62pj9H9ter4rv7"
+			]
+		},
+		"Gacha/Gacha.sol": {
+			"keccak256": "0x781a45b66a18d01463666fe7e7c61b85170cb7bc3e6bfda94668ae2600a9e811",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://85935c411443fd372c3cc9d5c650e450bcedab68f72ed9eeb17c3e86487484b9",
+				"dweb:/ipfs/QmYZCsQDiJ7puFgutoM7qaaT22raip8qeJjRCZGvY5Wqv8"
+			]
+		},
+		"Gacha/IERC1155.sol": {
+			"keccak256": "0x5454acf9dc6e247b21216a184bf2291e1b3e4a1d17b997b45fad26848da16807",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d2627eb69ba3e244360f84bbdd918537878e8897bfb24d4cbacd78e2d666019e",
+				"dweb:/ipfs/QmdZdFczVLd3bXKcmfrVYVgzMMtL1oaQ8Lf27otKnQGPES"
+			]
+		},
+		"Gacha/IERC165.sol": {
+			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+			]
+		},
+		"Gacha/IERC721Receiver.sol": {
+			"keccak256": "0xa82b58eca1ee256be466e536706850163d2ec7821945abd6b4778cfb3bee37da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e75cf83beb757b8855791088546b8337e9d4684e169400c20d44a515353b708",
+				"dweb:/ipfs/QmYvPafLfoquiDMEj7CKHtvbgHu7TJNPSVPSCjrtjV8HjV"
+			]
+		},
+		"Gacha/SafeMath.sol": {
+			"keccak256": "0x14bc8b6b85eb1ae822bdc7d3a91841a47a0e0f70738c6fa922b61926ad9598fc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f0fbeb7eff08ed83059dcbf2e459eef56d182f30f9cb6d0599962f3d2eb2c799",
+				"dweb:/ipfs/QmV5QomqCrLsjCKcaAo9AZoyE1uy4PPHGywJ86FtWHwSLL"
+			]
+		},
+		"Gacha/TransferHelper.sol": {
+			"keccak256": "0x360682e8109a54b69ccfab0bb4c807b17c5a6d77398c7789969824a22d32275f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa52058db907fbcbb7b6b41d1977cc40c7be28002157986ef4b831e3685bc56c",
+				"dweb:/ipfs/QmV1UsuCg75YCzvKVdc16U81S4jBA7k1LjgLaD3L6XwPt7"
+			]
+		}
+	},
+	"version": 1
+}

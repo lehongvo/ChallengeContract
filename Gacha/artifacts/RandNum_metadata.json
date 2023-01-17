@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "random",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Gacha/test.sol": "RandNum"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Gacha/test.sol": {
+			"keccak256": "0xbe7ffc82824c0387ae1a386c01b0cfa207647092da9f24a1ed70ee701d48a726",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d85726a42b829b88b4f0f304a267063e16406b2c48d26f6da7b79fbe8429ed16",
+				"dweb:/ipfs/QmXBx6x1dUnMYuaAizFsRQbzi7XzjKyEza7oBNYpB6rsY4"
+			]
+		}
+	},
+	"version": 1
+}

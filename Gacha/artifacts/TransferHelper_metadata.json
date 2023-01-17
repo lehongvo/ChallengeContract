@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "helper methods for interacting with ERC20 tokens that do not consistently return true/false with the addition of a transfer function to send eth or an erc20 token",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Gacha/TransferHelper.sol": "TransferHelper"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Gacha/TransferHelper.sol": {
+			"keccak256": "0x360682e8109a54b69ccfab0bb4c807b17c5a6d77398c7789969824a22d32275f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa52058db907fbcbb7b6b41d1977cc40c7be28002157986ef4b831e3685bc56c",
+				"dweb:/ipfs/QmV1UsuCg75YCzvKVdc16U81S4jBA7k1LjgLaD3L6XwPt7"
+			]
+		}
+	},
+	"version": 1
+}
